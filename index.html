@@ -14,6 +14,7 @@
     // STEP 2 CODE
     // Initialize the viewer with Cesium World Terrain.
     const viewer = new Cesium.Viewer('cesiumContainer', {
+       vrButton: true,
        terrainProvider: new Cesium.CesiumTerrainProvider({
            url: Cesium.IonResource.fromAssetId(354063),
        })
